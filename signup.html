@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Toronto Blue Jays Fan Site</title>
+        <link rel="icon" type="image/png" href="images/toronto-blue-jays-logo.png"/>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/styleSheet.css">
+        <style>
+            figure {
+                display: block;
+            }
+            header h4 {
+                margin: 0px 0px 10px 0px;
+                font-style: italic
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Toronto Blue Jays Fan Site<img src="images/toronto-blue-jays-logo.png" width="32" height="30" alt="Jays Logo"> </h1>
+            
+            <h4><i>The ultimate fan experience</i></h4>
+            
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="roster.html">Roster</a></li>
+                <li><a href="highlights.html">Highlights</a></li>
+                <li><a href="transactions.html">Transactions</a></li>
+                <li><a href="signup.html">Newsletter</a></li>
+            </ul>
+        </header>
+        
+        <main>
+            <div class="formContainer">   
+                <h2 style="text-align: center; padding: 20px 0px; clear:both; margin: auto;">Sign up for our Newsletter!</h2>
+                    <form class="signUpForm" action="success.html" method="get">
+                    <label for="name">Name</label>
+                    <input name="name" id="name" type="text" required>
+                    <br/>
+                    <label for="email">Email</label>
+                    <input name="email" id="email" type="email" required>
+                    <br/>
+                    <button type="submit">Sign up</button>
+                </form>
+            </div>    
+        </main>
+    </body>
+    
+    <footer>
+        <p>Author: Marcus Hutchings. Last updated: <time datetime="2021-05-20">05/20/2021</time></p>
+    </footer>
+</html>

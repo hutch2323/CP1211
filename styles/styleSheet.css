@@ -1,0 +1,196 @@
+body {
+    padding: 0px;
+}
+
+h1 {
+    margin: 0px;
+    color: white;
+    margin: 8px 0px 0px 10px;
+}
+
+p {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #333;
+    display: block;
+    font-size: 1em;
+}
+
+header {
+    background-color: #1d2d5c;
+    
+    border: 0px;
+    color: white;
+    padding: 8px 0px;
+    text-align: center;
+}
+
+ul.navigation {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px 0px 0px;
+    background-color: #134a8e;
+    width: 100%;
+}
+
+.navigation li {
+    display: inline;
+    float: left;
+    width: 20%;
+}
+
+.navigation a {
+    display: block;
+    padding: 12px;
+    background-color: #134a8e;
+    color: #c6d3e4;
+    text-align: center;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+h2 {
+    color: #134a8e;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 1.2;
+    font-weight: 700;
+    text-align: center;
+}
+
+.contentContainer div {
+    padding: 20px;
+    width: 47%;
+    background-color: white;
+    position: relative;
+    line-height: 1.5;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style: normal;
+    color: #333;
+    display: block;
+    font-size: 1em;
+    overflow: auto
+}
+
+.content1, .content3, .content5 {
+    float: left;
+}
+
+.content2, .content4, .content6 {
+    float: right
+}
+
+figure {
+    align-items: center;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-color: grey;
+    border-style: none;
+    border-width: 10px;  
+    font-family: Helvetica,Arial,sans-serif;
+    font-style: normal;
+    line-height: 1.5;
+    font-size: 16px;
+    vertical-align: middle;
+    margin: auto;
+    text-align: center;
+    font-weight: 400;
+}
+
+th {
+    background-color: #1d2d5c;
+    color: white;
+}
+
+tr {
+    border-bottom: 1px solid #D2D2D2;
+}
+
+td b {
+    color:#134a8e;
+}
+
+table.statistics {
+    width: 100%;
+}
+
+table.standings {
+    width: 65%;
+    margin-top: 30px;
+}
+
+table.transactions, table.roster {
+    width: 80%;
+}
+
+table.transactions {
+    padding-bottom: 20px;
+}
+
+.statistics td {
+    width: 10%;
+}
+
+.firstColumn, #teamNameColumn {
+    border-right: 1px solid #D2D2D2;
+}
+
+.standings th, .roster th, .transactions th {
+    width: 15%;
+}
+
+#teamNameColumn {
+    width: 40%;
+    text-align: left;
+}
+
+th.firstColumn {
+    width: 1%;
+}
+
+.signUpForm {
+    width: 25%;
+    text-align: center;
+    vertical-align: middle;
+    padding-bottom: 20px;
+    margin: auto;
+    background-color: white;
+}
+
+.formContainer {
+    background-image: url("../images/newsPaper.jpg");
+}
+
+.formContainer h2 {
+    width: 25%;
+    margin: auto;
+    background-color: white;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    background-color: #1d2d5c;
+    border: 0px;
+    color: white;
+    padding: 8px 0px;
+    font-style: normal;
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+footer p {
+    color: white;
+    margin-left: 20px;
+}
