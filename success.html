@@ -1,51 +1,59 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Toronto Blue Jays Fan Site</title>
-        <link rel="icon" type="image/png" href="images/toronto-blue-jays-logo.png"/>
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/styleSheet.css">
-        <style>
-            figure {
-                display: block;
-            }
-            header h4 {
-                margin: 0px 0px 10px 0px;
-                font-style: italic
-            }
-        </style>
-    </head>
-    
-    <body>
-        <header>
-            <h1>Toronto Blue Jays Fan Site<img src="images/toronto-blue-jays-logo.png" width="32" height="30" alt="Jays Logo"> </h1>
-            
-            <h4><i>The ultimate fan experience</i></h4>
-            
-            <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="roster.html">Roster</a></li>
-                <li><a href="highlights.html">Highlights</a></li>
-                <li><a href="transactions.html">Transactions</a></li>
-                <li><a href="signup.html">Newsletter</a></li>
-            </ul>
-        </header>
+    <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout</title>
+    <link rel="stylesheet" href="styles/grid.css">
+    <style>
+        .messageContainer {
+            background-color: white;
+        }
+        main {
+            background-image: url("images/newsPaper.jpg");
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Toronto Blue Jays Fan Site<img src="images/toronto-blue-jays-logo.png" width="32" height="30" alt="Jays Logo"> </h1>
+        <h4><i>The ultimate fan experience</i></h4>
+      </header>
+      
+      <nav class="navigation">
+        <!--<h2>nav</h2>
+        <a href="#main-content">skip navigation</a>-->
+        <!--<ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="roster.html">Roster</a></li>
+          <li><a href="highlights.html">Highlights</a></li>
+          <li><a href="transactions.html">Transactions</a></li>
+          <li><a href="signup.html">Newsletter</a></li>
+        </ul>-->
+        <div><a href="index.html">Home</a></div>
+        <div><a href="roster.html">Roster</a></div>
+        <div><a href="highlights.html">Highlights</a></div>
+        <div><a href="transactions.html">Transactions</a></div>
+        <div><a href="signup.html">Newsletter</a></div>
+      </nav>
         
-        <main>        
-            <h2 style="text-align: center; padding-top: 40px">Success!</h2>
+        <main>    
+            <div class="messageContainer">
+                <h2 style="text-align: center; padding-top: 40px">Success!</h2>
 
-            <p style="text-align: center; padding-bottom: 20px">Thank you for signing up! Be sure to check your email every Wednesday for our weekly newsletter!
+                <p style="text-align: center; padding-bottom: 20px">Thank you for signing up! Be sure to check your email every Wednesday for our weekly newsletter!
             
-            <br/><br/>
+                <br/><br/>
             
-            <a href="index.html">Click here</a> to return to the home page.</p>
+                <a href="index.html">Click here</a> to return to the home page.</p>
+            </div>
         </main>
     </body>
     
     <footer>
-        <p>Author: Marcus Hutchings. Last updated: <time datetime="2021-05-20">05/20/2021</time></p>
+        <p>Author: Marcus Hutchings. Last updated: <time datetime="2021-05-29">05/29/2021</time></p>
     </footer>
 </html>

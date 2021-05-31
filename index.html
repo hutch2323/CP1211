@@ -1,279 +1,694 @@
-<!-- 
-    CP1211 - Assignment #2
-    Marcus Hutchings
-    20048535
--->
-
-<!--
-On your website, include the following html elements:
-Paragraphs 
-Headlines
-Lists
-Quotes
-Links
-Images
-Choose one of an audio or video element
-Choose 4 other elements not listed above
--->
-
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout</title>
+    <link rel="stylesheet" href="styles/grid.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Toronto Blue Jays Fan Site<img src="images/toronto-blue-jays-logo.png" width="32" height="30" alt="Jays Logo"> </h1>
+        <h4><i>The ultimate fan experience</i></h4>
+      </header>
+      <main id="main-content">
+        <div class="content1">
+          <p>The <strong>Toronto Blue Jays</strong> are a professional baseball team, and are a member of Major League Baseball. 
+          The Blue Jays are based out of <em>Toronto, ON</em>, but are currently playing in <em>Buffalo, NY</em>, due to the ongoing
+          COVID-19 pandemic. Earlier this season, the Blue Jays played out of their spring training complex in <em>Dunedin, FL</em>.
+          It is believed that the Blue Jays will play games in Toronto as well this season, but that decision is in the hands of
+          the federal government of Canada.
+          </p>
 
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Toronto Blue Jays Fan Site</title>
-        <link rel="icon" type="image/png" href="images/toronto-blue-jays-logo.png"/>
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/styleSheet.css">
-        <style>
-            figure {
-                display: block;
-            }
-            header h4 {
-                margin: 0px 0px 10px 0px;
-                font-style: italic
-            }
-        </style>
-    </head>
-    
-    <body>
-        <header>
-            <h1>Toronto Blue Jays Fan Site<img src="images/toronto-blue-jays-logo.png" width="32" height="30" alt="Jays Logo"> </h1>
-            <h4><i>The ultimate fan experience</i></h4>
-            <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="roster.html">Roster</a></li>
-                <li><a href="highlights.html">Highlights</a></li>
-                <li><a href="transactions.html">Transactions</a></li>
-                <li><a href="signup.html">Newsletter</a></li>
-            </ul>
-        </header>
+          <figure>
+              <img src="images/jaysLogoField.jpg" width="512" height="288" alt="Jays logo on field">
+              <figcaption>
+                  <q>The alternatives for our season lie with some combination of Dunedin, Buffalo and Toronto</q> <br/>
+                  <cite>- Mark Shapiro, President & CEO of Toronto Blue Jays</cite>
+              </figcaption>
+          </figure>
+      </div>
+      
+      <br/>
+  
+      <div class="content2">
+          <h2>Springer to resume training on Thursday</h2>
+          
+          <p>The Blue Jays received wonderful news recently, as it was announced that prized off-season acquisition, <strong>George Springer</strong>
+              will resume training in hopes of returning to the line-up soon. Springer, of course, signed a massive six-year,
+              $150-million dollar contract in January, serving as the largest contract in team history. However, Springer has only
+              appeared in 4 regular season games, picking up 2 HRs and 3 RBIs in the process.
+          </p>
+          
+          <figure>
+              <img src="images/GeorgeSpringer.jpg" width="512" length="340" alt="George Springer during spring training">
+              <figcaption>George Springer during spring training in Dunedin, FL</figcaption>
+          </figure>
 
-        <main>
-            <div class="contentContainer">
-                <div class="content1">
-                    <p>The <strong>Toronto Blue Jays</strong> are a professional baseball team, and are a member of Major League Baseball. 
-                    The Blue Jays are based out of <em>Toronto, ON</em>, but are currently playing in <em>Buffalo, NY</em>, due to the ongoing
-                    COVID-19 pandemic. Earlier this season, the Blue Jays played out of their spring training complex in <em>Dunedin, FL</em>.
-                    It is believed that the Blue Jays will play games in Toronto as well this season, but that decision is in the hands of
-                    the federal government of Canada.
-                    </p>
+          <p style="padding-bottom: 10px">Many had hoped that Springer would finally be the piece that would push the Blue Jays into playoff contention, perhaps even picking up an American League
+              East crown in the process. Signing the 2017 World Series MVP was a top priority for Blue Jays management, building on the four-year, $80-million dollar contract
+              given to starting pitcher <strong>Hyun Jin Ryu</strong> (see <a href="https://www.baseball-reference.com/players/r/ryuhy01.shtml">Career Stats</a>) last off-season. If Springer can return to full form, expect the Blue Jays to be a force on the diamond
+              this summer and fall. Here's a look at Springer's career stats:
+          </p>
+      
+          <table class="statistics">
+              <tr>
+                  <th alt="Year">Year</th>
+                  <th>Team</th>
+                  <th>PA</th>
+                  <th>AB</th>
+                  <th>Hits</th>
+                  <th>AVG</th>
+                  <th>HR</th>
+                  <th>RBI</th>
+                  <th>Runs</th>
+                  <th>Walks</th>
+              </tr>
+              <tr>
+                  <td class="firstColumn">2014</td>
+                  <td>HOU</td>
+                  <td>345</td>
+                  <td>295</td>
+                  <td>68</td>
+                  <td>.231</td>
+                  <td>20</td>
+                  <td>51</td>
+                  <td>45</td>
+                  <td>39</td>
+              </tr>
+              <tr>
+                  <td class="firstColumn">2015</td>
+                  <td>HOU</td>
+                  <td>451</td>
+                  <td>388</td>
+                  <td>107</td>
+                  <td>.276</td>
+                  <td>16</td>
+                  <td>41</td>
+                  <td>59</td>
+                  <td>50</td>
+              </tr>
+              <tr>
+                  <td class="firstColumn">2016</td>
+                  <td>HOU</td>
+                  <td>744</td>
+                  <td>644</td>
+                  <td>168</td>
+                  <td>.261</td>
+                  <td>29</td>
+                  <td>82</td>
+                  <td>116</td>
+                  <td>88</td>
+              </tr>
+              <tr>
+                  <td class="firstColumn">2017</td>
+                  <td>HOU</td>
+                  <td>629</td>
+                  <td>548</td>
+                  <td>155</td>
+                  <td>.283</td>
+                  <td>34</td>
+                  <td>85</td>
+                  <td>112</td>
+                  <td>64</td>
+              </tr>
+              <tr>
+                  <td class="firstColumn">2018</td>
+                  <td>HOU</td>
+                  <td>620</td>
+                  <td>544</td>
+                  <td>144</td>
+                  <td>.265</td>
+                  <td>22</td>
+                  <td>71</td>
+                  <td>102</td>
+                  <td>64</td>
+              </tr>
+              <tr>
+                  <td class="firstColumn">2019</td>
+                  <td>HOU</td>
+                  <td>556</td>
+                  <td>479</td>
+                  <td>140</td>
+                  <td>.292</td>
+                  <td>39</td>
+                  <td>96</td>
+                  <td>96</td>
+                  <td>67</td>
+              </tr>
+              <tr>
+                  <td class="firstColumn">2020</td>
+                  <td>HOU</td>
+                  <td>222</td>
+                  <td>189</td>
+                  <td>50</td>
+                  <td>.265</td>
+                  <td>14</td>
+                  <td>32</td>
+                  <td>37</td>
+                  <td>24</td>
+              </tr>
+              <tr>
+                  <td class="firstColumn">2021</td>
+                  <td>TOR</td>
+                  <td>18</td>
+                  <td>15</td>
+                  <td>3</td>
+                  <td>.200</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>3</td>
+                  <td>2</td>
+              </tr>
+          </table>            
+      </div>
 
-                    <figure>
-                        <img src="images/jaysLogoField.jpg" width="512" height="288" alt="Jays logo on field">
-                        <figcaption>
-                            <q>The alternatives for our season lie with some combination of Dunedin, Buffalo and Toronto</q> <br/>
-                            <cite>- Mark Shapiro, President & CEO of Toronto Blue Jays</cite>
-                        </figcaption>
-                    </figure>
-                </div>
-            
-            
-                <div class="content2">
-                    <h2>Springer to resume training on Thursday</h2>
-                    
-                    <p>The Blue Jays received wonderful news recently, as it was announced that prized off-season acquisition, <strong>George Springer</strong>
-                        will resume training in hopes of returning to the line-up soon. Springer, of course, signed a massive six-year,
-                        $150-million dollar contract in January, serving as the largest contract in team history. However, Springer has only
-                        appeared in 4 regular season games, picking up 2 HRs and 3 RBIs in the process.
-                    </p>
-                    
-                    <figure>
-                        <img src="images/GeorgeSpringer.jpg" width="512" length="340" alt="George Springer during spring training">
-                        <figcaption>George Springer during spring training in Dunedin, FL</figcaption>
-                    </figure>
+      <br/>
 
-                    <p style="padding-bottom: 10px">Many had hoped that Springer would finally be the piece that would push the Blue Jays into playoff contention, perhaps even picking up an American League
-                        East crown in the process. Signing the 2017 World Series MVP was a top priority for Blue Jays management, building on the four-year, $80-million dollar contract
-                        given to starting pitcher <strong>Hyun Jin Ryu</strong> (see <a href="https://www.baseball-reference.com/players/r/ryuhy01.shtml">Career Stats</a>) last off-season. If Springer can return to full form, expect the Blue Jays to be a force on the diamond
-                        this summer and fall. Here's a look at Springer's career stats:
-                    </p>
-                
-                    <table class="statistics">
+      <div class="content3">
+          <h2>Vladdy being Vladdy</h2>
+          
+          <p>Since joining the Blue Jays in 2019, <strong>Vladimir Guerrero Jr.</strong> has quickly become a fan favorite in Toronto. Born in <em>Montreal, QC</em> to Hall of Famer <strong>Vladimir Guerrero Sr</strong>,
+              Vlad Jr. has carved a unique path for himself. Known for his ability to make contact and hit home runs, fans have started to gravitate towards Vladdy's happy-go-lucky attitude, which is 
+              evident by the video shown below:                 
+          </p>
+          
+          <div class="iframe-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ty-_c4VDThU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <figure>    
+            <figcaption>Vladimir Guerrero Jr. mimics pitcher Jordan Romano's technique vs Atlanta</figcaption>
+          </figure>
+          
+          <p>This season, Vlad Jr. has been on an absolute tear, batting to a .307 average with 8 HR and 26 RBI through 36 games. Many believe that this could be the breakout
+              season that we've all been hoping for from the 22 year old. To complement his bat, Vlad Jr. has also played stellar defence, often putting his own body on the line
+              to make remarkable catches or to bail out his teammates on errors.
+          </p>
+      </div>
+      
+    </main>
+
+      <div class ="contentLeft">
+        <div class="content4">
+          <h2>American League Standings</h2>
+          
+          <table class="standings">
+              <tr>
+                  <th id="teamNameColumn">AL EAST</th>
+                  <th>W</th>
+                  <th>L</th>
+                  <th>%</th>
+                  <th>GB</th>
+              </tr>
+              <tr>
+                <td id="teamNameColumn"><img src="images/raysLogo.png" width="24" length="24" alt="Rays Logo">  Tampa Bay Rays</td>
+                <td>32</td>
+                <td>20</td>
+                <td>.615</td>
+                <td>-</td>
+            </tr>
+              <tr>
+                  <td id="teamNameColumn"><img src="images/redSoxLogo.png" width="24" length="24" alt="Red Sox Logo">  Boston Red Sox</td>
+                  <td>31</td>
+                  <td>20</td>
+                  <td>.608</td>
+                  <td>0.5</td>
+              </tr>
+              <tr>
+                <td id="teamNameColumn"><img src="images/yankeesLogo.png" width="24" length="24" alt="Yankees Logo">  New York Yankees</td>
+                <td>29</td>
+                <td>22</td>
+                <td>.569</td>
+                <td>2.5</td>
+            </tr>
+              <tr>
+                  <td id="teamNameColumn"><img src="images/blueJaysLogo.png" width="24" length="24" alt="Blue Jays Logo">  Toronto Blue Jays</td>
+                  <td>26</td>
+                  <td>24</td>
+                  <td>.520</td>
+                  <td>5.0</td>
+              </tr>
+              <tr>
+                  <td id="teamNameColumn"><img src="images/oriolesLogo.png" width="24" length="24" alt="Orioles Logo">  Baltimore Orioles</td>
+                  <td>17</td>
+                  <td>33</td>
+                  <td>.340</td>
+                  <td>14.0</td>
+              </tr>
+          </table>
+          
+          <table class="standings">
+            <tr>
+                <th id="teamNameColumn">AL CENTRAL</th>
+                <th>W</th>
+                <th>L</th>
+                <th>%</th>
+                <th>GB</th>
+            </tr>
+            <tr>
+                <td id="teamNameColumn"><img src="images/whiteSoxLogo.png" width="24" length="24" alt="White Sox Logo">  Chicago White Sox</td>
+                <td>29</td>
+                <td>20</td>
+                <td>.592</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td id="teamNameColumn"><img src="images/indiansLogo.png" width="24" length="24" alt="Indians Logo">  Cleveland Indians</td>
+                <td>27</td>
+                <td>22</td>
+                <td>.551</td>
+                <td>2.0</td>
+            </tr>
+            <tr>
+                <td id="teamNameColumn"><img src="images/royalsLogo.png" width="24" length="24" alt="Royals Logo">  Kansas City Royals</td>
+                <td>24</td>
+                <td>25</td>
+                <td>.490</td>
+                <td>5.0</td>
+            </tr>
+            <tr>
+                <td id="teamNameColumn"><img src="images/twinsLogo.png" width="24" length="24" alt="Twins Logo">  Minnesota Twins</td>
+                <td>20</td>
+                <td>30</td>
+                <td>.400</td>
+                <td>9.5</td>
+            </tr>
+            <tr>
+                <td id="teamNameColumn"><img src="images/tigersLogo.png" width="24" length="24" alt="Tigers Logo">  Detroit Tigers</td>
+                <td>20</td>
+                <td>31</td>
+                <td>.392</td>
+                <td>10.0</td>
+            </tr>
+        </table>  
+
+        <table class="standings">
+            <tr>
+                <th id="teamNameColumn">AL WEST</th>
+                <th>W</th>
+                <th>L</th>
+                <th>%</th>
+                <th>GB</th>
+            </tr>
+            <tr>
+                <td id="teamNameColumn"><img src="images/athleticsLogo.png" width="24" length="24" alt="Athletics Logo">  Oakland Athletics</td>
+                <td>31</td>
+                <td>22</td>
+                <td>.585</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td id="teamNameColumn"><img src="images/astrosLogo.png" width="24" length="24" alt="Astros Logo">  Houston Astros</td>
+                <td>27</td>
+                <td>23</td>
+                <td>.540</td>
+                <td>2.5</td>
+            </tr>
+            <tr>
+                <td id="teamNameColumn"><img src="images/marinersLogo.png" width="24" length="24" alt="Mariners Logo">  Seattle Mariners</td>
+                <td>25</td>
+                <td>27</td>
+                <td>.481</td>
+                <td>5.5</td>
+            </tr>
+            <tr>
+                <td id="teamNameColumn"><img src="images/anglesLogo.png" width="24" length="24" alt="Angles Logo">  L.A. Angles</td>
+                <td>22</td>
+                <td>29</td>
+                <td>.431</td>
+                <td>8.0</td>
+            </tr>
+            <tr>
+                <td id="teamNameColumn"><img src="images/rangersLogo.png" width="24" length="24" alt="Rangers Logo">  Texas Rangers</td>
+                <td>22</td>
+                <td>31</td>
+                <td>.415</td>
+                <td>9.0</td>
+            </tr>
+        </table>  
+        <br/>
+        <h2>National League Standings</h2>
+
+        <table class="standings">
+            <tr>
+                <th id="teamNameColumn">NL EAST</th>
+                <th>W</th>
+                <th>L</th>
+                <th>%</th>
+                <th>GB</th>
+            </tr>
+            <tr>
+                <td id="teamNameColumn"><img src="images/metsLogo.png" width="24" length="24" alt="MetsLogo">  New York Mets</td>
+                <td>24</td>
+                <td>20</td>
+                <td>.545</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td id="teamNameColumn"><img src="images/philliesLogo.png" width="24" length="24" alt="Phillies Logo">  Philadelphia Phillies</td>
+                <td>25</td>
+                <td>26</td>
+                <td>.490</td>
+                <td>2.5</td>
+            </tr>
+            <tr>
+                <td id="teamNameColumn"><img src="images/bravesLogo.png" width="24" length="24" alt="Braves Logo">  Atlanta Braves</td>
+                <td>24</td>
+                <td>25</td>
+                <td>.490</td>
+                <td>2.5</td>
+            </tr>
+            <tr>
+                <td id="teamNameColumn"><img src="images/marlinsLogo.png" width="24" length="24" alt="Marlins Logo">  Miami Marlins</td>
+                <td>24</td>
+                <td>27</td>
+                <td>.471</td>
+                <td>3.5</td>
+            </tr>
+            <tr>
+                <td id="teamNameColumn"><img src="images/nationalsLogo.png" width="24" length="24" alt="Nationals Logo">  Washington Nationals</td>
+                <td>21</td>
+                <td>25</td>
+                <td>.457</td>
+                <td>4.0</td>
+            </tr>
+        </table>  
+
+        <table class="standings">
+            <tr>
+                <th id="teamNameColumn">NL Central</th>
+                <th>W</th>
+                <th>L</th>
+                <th>%</th>
+                <th>GB</th>
+            </tr>
+            <tr>
+                <td id="teamNameColumn"><img src="images/cardinalsLogo.png" width="24" length="24" alt="Cardinals Logo">  St. Louis Cardinals</td>
+                <td>29</td>
+                <td>22</td>
+                <td>.569</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td id="teamNameColumn"><img src="images/cubsLogo.png" width="24" length="24" alt="Cubs Logo">  Chicago Cubs</td>
+                <td>28</td>
+                <td>22</td>
+                <td>.560</td>
+                <td>0.5</td>
+            </tr>
+            <tr>
+                <td id="teamNameColumn"><img src="images/brewersLogo.png" width="24" length="24" alt="Brewers Logo">  Milwaukee Brewers</td>
+                <td>25</td>
+                <td>25</td>
+                <td>.500</td>
+                <td>3.5</td>
+            </tr>
+            <tr>
+                <td id="teamNameColumn"><img src="images/redsLogo.png" width="24" length="24" alt="Reds Logo">  Cincinnati Reds</td>
+                <td>22</td>
+                <td>27</td>
+                <td>.499</td>
+                <td>6.0</td>
+            </tr>
+            <tr>
+                <td id="teamNameColumn"><img src="images/piratesLogo.png" width="24" length="24" alt="Pirates Logo">  Pittsburgh Pirates</td>
+                <td>18</td>
+                <td>31</td>
+                <td>.367</td>
+                <td>10.0</td>
+            </tr>
+        </table>  
+
+        <table class="standings">
+            <tr>
+                <th id="teamNameColumn">NL WEST</th>
+                <th>W</th>
+                <th>L</th>
+                <th>%</th>
+                <th>GB</th>
+            </tr>
+            <tr>
+                <td id="teamNameColumn"><img src="images/padresLogo.png" width="24" length="24" alt="Padres Logo">  San Diego Padres</td>
+                <td>33</td>
+                <td>19</td>
+                <td>.635</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td id="teamNameColumn"><img src="images/dodgersLogo.png" width="24" length="24" alt="Dodgers Logo">  LA Dodgers</td>
+                <td>31</td>
+                <td>20</td>
+                <td>.608</td>
+                <td>1.5</td>
+            </tr>
+            <tr>
+                <td id="teamNameColumn"><img src="images/giantsLogo.png" width="24" length="24" alt="Giants Logo">  San Francisco Giants</td>
+                <td>31</td>
+                <td>20</td>
+                <td>.608</td>
+                <td>1.5</td>
+            </tr>
+            <tr>
+                <td id="teamNameColumn"><img src="images/rockiesLogo.png" width="24" length="24" alt="Rockies Logo">  Colorado Rockies</td>
+                <td>19</td>
+                <td>32</td>
+                <td>.373</td>
+                <td>13.5</td>
+            </tr>
+            <tr>
+                <td id="teamNameColumn"><img src="images/diamondbacksLogo.png" width="24" length="24" alt="Diamondbacks Logo">  Arizona Diamondbacks</td>
+                <td>18</td>
+                <td>34</td>
+                <td>.346</td>
+                <td>15.0</td>
+            </tr>
+        </table>  
+      </div> 
+      </div>
+
+      <nav class="navigation">
+        <!--<h2>nav</h2>
+        <a href="#main-content">skip navigation</a>-->
+        <!--<ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="roster.html">Roster</a></li>
+          <li><a href="highlights.html">Highlights</a></li>
+          <li><a href="transactions.html">Transactions</a></li>
+          <li><a href="signup.html">Newsletter</a></li>
+        </ul>-->
+        <div><a href="index.html">Home</a></div>
+        <div><a href="roster.html">Roster</a></div>
+        <div><a href="highlights.html">Highlights</a></div>
+        <div><a href="transactions.html">Transactions</a></div>
+        <div><a href="signup.html">Newsletter</a></div>
+      </nav>
+     
+      <aside>
+        <h2>Stat Leaders</h2>
+        <div class="statLeaders">
+            <div class="offense">
+                <div class="homeRuns">
+                    <table class="leaders">
                         <tr>
-                            <th alt="Year">Year</th>
-                            <th>Team</th>
-                            <th>PA</th>
-                            <th>AB</th>
-                            <th>Hits</th>
-                            <th>AVG</th>
-                            <th>HR</th>
-                            <th>RBI</th>
-                            <th>Runs</th>
-                            <th>Walks</th>
+                            <th colspan="3">Home Runs</th>
                         </tr>
                         <tr>
-                            <td class="firstColumn">2014</td>
-                            <td>HOU</td>
-                            <td>345</td>
-                            <td>295</td>
-                            <td>68</td>
-                            <td>.231</td>
-                            <td>20</td>
-                            <td>51</td>
-                            <td>45</td>
-                            <td>39</td>
-                        </tr>
-                        <tr>
-                            <td class="firstColumn">2015</td>
-                            <td>HOU</td>
-                            <td>451</td>
-                            <td>388</td>
-                            <td>107</td>
-                            <td>.276</td>
+                            <td>1</td>
+                            <td>Guerrero Jr.</td>
                             <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Semien</td>
+                            <td>13</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Bichette</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Grichuk</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Hernandez</td>
+                            <td>7</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="rbis">
+                    <table class="leaders">
+                        <tr>
+                            <th colspan="3">RBIs</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Guerrero Jr.</td>
                             <td>41</td>
-                            <td>59</td>
-                            <td>50</td>
                         </tr>
                         <tr>
-                            <td class="firstColumn">2016</td>
-                            <td>HOU</td>
-                            <td>744</td>
-                            <td>644</td>
-                            <td>168</td>
-                            <td>.261</td>
-                            <td>29</td>
-                            <td>82</td>
-                            <td>116</td>
-                            <td>88</td>
-                        </tr>
-                        <tr>
-                            <td class="firstColumn">2017</td>
-                            <td>HOU</td>
-                            <td>629</td>
-                            <td>548</td>
-                            <td>155</td>
-                            <td>.283</td>
-                            <td>34</td>
-                            <td>85</td>
-                            <td>112</td>
-                            <td>64</td>
-                        </tr>
-                        <tr>
-                            <td class="firstColumn">2018</td>
-                            <td>HOU</td>
-                            <td>620</td>
-                            <td>544</td>
-                            <td>144</td>
-                            <td>.265</td>
-                            <td>22</td>
-                            <td>71</td>
-                            <td>102</td>
-                            <td>64</td>
-                        </tr>
-                        <tr>
-                            <td class="firstColumn">2019</td>
-                            <td>HOU</td>
-                            <td>556</td>
-                            <td>479</td>
-                            <td>140</td>
-                            <td>.292</td>
-                            <td>39</td>
-                            <td>96</td>
-                            <td>96</td>
-                            <td>67</td>
-                        </tr>
-                        <tr>
-                            <td class="firstColumn">2020</td>
-                            <td>HOU</td>
-                            <td>222</td>
-                            <td>189</td>
-                            <td>50</td>
-                            <td>.265</td>
-                            <td>14</td>
-                            <td>32</td>
-                            <td>37</td>
-                            <td>24</td>
-                        </tr>
-                        <tr>
-                            <td class="firstColumn">2021</td>
-                            <td>TOR</td>
-                            <td>18</td>
-                            <td>15</td>
-                            <td>3</td>
-                            <td>.200</td>
                             <td>2</td>
+                            <td>Grichuk</td>
+                            <td>38</td>
+                        </tr>
+                        <tr>
+                            <td>T-3</td>
+                            <td>Bichette</td>
+                            <td>31</td>
+                        </tr>
+                        <tr>
+                            <td>T-3</td>
+                            <td>Semien</td>
+                            <td>31</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Hernandez</td>
+                            <td>25</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="avg">
+                    <table class="leaders">
+                        <tr>
+                            <th colspan="3">Average</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Guerrero Jr.</td>
+                            <td>.331</td>
+                        </tr>
+                        <tr>
+                            <td>T-2</td>
+                            <td>Grichuk</td>
+                            <td>.286</td>
+                        </tr>
+                        <tr>
+                            <td>T-2</td>
+                            <td>Semien</td>
+                            <td>.286</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Bichette</td>
+                            <td>.267</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Gurriel Jr.</td>
+                            <td>.257</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="pitching">
+                <div class="wins">
+                    <table class="leaders">
+                        <tr>
+                            <th colspan="3">Wins</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Matz</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Ryu</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>T-3</td>
+                            <td>Borucki</td>
                             <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>T-3</td>
+                            <td>Romano</td>
                             <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Ray</td>
                             <td>2</td>
                         </tr>
-                    </table>            
+                    </table>
                 </div>
-
-                <div class="content3">
-                    <h2>Vladdy being Vladdy</h2>
-                    
-                    <p>Since joining the Blue Jays in 2019, <strong>Vladimir Guerrero Jr.</strong> has quickly become a fan favorite in Toronto. Born in <em>Montreal, QC</em> to Hall of Famer <strong>Vladimir Guerrero Sr</strong>,
-                        Vlad Jr. has carved a unique path for himself. Known for his ability to make contact and hit home runs, fans have started to gravitate towards Vladdy's happy-go-lucky attitude, which is 
-                        evident by the video shown below:                 
-                    </p>
-                    
-                    <figure>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ty-_c4VDThU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <figcaption>Vladimir Guerrero Jr. mimics pitcher Jordan Romano's technique vs Atlanta</figcaption>
-                    </figure>
-                    
-                    <p>This season, Vlad Jr. has been on an absolute tear, batting to a .307 average with 8 HR and 26 RBI through 36 games. Many believe that this could be the breakout
-                        season that we've all been hoping for from the 22 year old. To complement his bat, Vlad Jr. has also played stellar defence, often putting his own body on the line
-                        to make remarkable catches or to bail out his teammates on errors.
-                    </p>
+                <div class="saves">
+                    <table class="leaders">
+                        <tr>
+                            <th colspan="3">Saves</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Dolis</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>T-2</td>
+                            <td>Merryweather</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>T-2</td>
+                            <td>Romano</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>T-4</td>
+                            <td>Castro</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>T-4</td>
+                            <td>Cole</td>
+                            <td>2</td>
+                        </tr>
+                    </table>
                 </div>
-                
-                <div class="content4">
-                    <h2>American League East Standings</h2>
-                    
-                    <table class="standings">
+                <div class="era">
+                    <table class="leaders">
                         <tr>
-                            <th id="teamNameColumn">EAST</th>
-                            <th>W</th>
-                            <th>L</th>
-                            <th>%</th>
-                            <th>GB</th>
+                            <th colspan="3">ERA</th>
                         </tr>
                         <tr>
-                            <td id="teamNameColumn"><img src="images/redSoxLogo.png" width="24" length="24" alt="Red Sox Logo">  Boston Red Sox</td>
-                            <td>26</td>
-                            <td>18</td>
-                            <td>.591</td>
-                            <td>-</td>
+                            <td>1</td>
+                            <td>Romano</td>
+                            <td>2.04</td>
                         </tr>
                         <tr>
-                            <td id="teamNameColumn"><img src="images/raysLogo.png" width="24" length="24" alt="Rays Logo">  Tampa Bay Rays</td>
-                            <td>25</td>
-                            <td>19</td>
-                            <td>.568</td>
-                            <td>1.0</td>
+                            <td>2</td>
+                            <td>Chatwood</td>
+                            <td>2.37</td>
                         </tr>
                         <tr>
-                            <td id="teamNameColumn"><img src="images/blueJaysLogo.png" width="24" length="24" alt="Blue Jays Logo">  Toronto Blue Jays</td>
-                            <td>23</td>
-                            <td>18</td>
-                            <td>.561</td>
-                            <td>1.5</td>
+                            <td>3</td>
+                            <td>Ryu</td>
+                            <td>2.62</td>
                         </tr>
                         <tr>
-                            <td id="teamNameColumn"><img src="images/yankeesLogo.png" width="24" length="24" alt="Yankees Logo">  New York Yankees</td>
-                            <td>24</td>
-                            <td>19</td>
-                            <td>.558</td>
-                            <td>1.5</td>
+                            <td>4</td>
+                            <td>Ray</td>
+                            <td>3.81</td>
                         </tr>
                         <tr>
-                            <td id="teamNameColumn"><img src="images/oriolesLogo.png" width="24" length="24" alt="Orioles Logo">  Baltimore Orioles</td>
-                            <td>17</td>
-                            <td>25</td>
-                            <td>.405</td>
-                            <td>8.0</td>
+                            <td>5</td>
+                            <td>Matz</td>
+                            <td>4.28</td>
                         </tr>
-                    </table>                
+                    </table>
                 </div>
-            </div> 
-        </main>
-    </body>
-
-    <footer>
-        <p>Author: Marcus Hutchings. Last updated: <time datetime="2021-05-17">05/20/2021</time></p>
-    </footer>
+            </div>
+        </div>
+      </aside>
+      <footer>
+        <p>Author: Marcus Hutchings. Last updated: <time datetime="2021-05-29">05/29/2021</time></p>
+      </footer>
+    </div>
+  </body>
 </html>

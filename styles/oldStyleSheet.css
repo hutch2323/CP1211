@@ -2,43 +2,29 @@ body {
     padding: 0px;
 }
 
-.contentContainer {
-
-    color: #333;
-    display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-    
-}
-
 h1 {
+    margin: 0px;
     color: white;
+    margin: 8px 0px 0px 10px;
 }
 
 p {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #333;
+    display: block;
     font-size: 1em;
 }
 
 header {
     background-color: #1d2d5c;
+    
+    border: 0px;
     color: white;
-    grid-column: 1 / 13;
+    padding: 8px 0px;
+    text-align: center;
 }
 
-.navigation ul {
-    background-color: #134a8e;
-    margin: 0;
-    /*width: 100%;*/
-}
-
-nav {
-    grid-column: 1 / 13;
-    grid-row: 2;
-}
-
-
-.navigation li {
+ul.navigation {
     list-style-type: none;
     margin: 0px;
     padding: 0px 0px 0px;
@@ -46,9 +32,18 @@ nav {
     width: 100%;
 }
 
+.navigation li {
+    display: inline;
+    float: left;
+    width: 20%;
+}
+
 .navigation a {
+    display: block;
+    padding: 12px;
     background-color: #134a8e;
     color: #c6d3e4;
+    text-align: center;
     font-size: 17px;
     text-decoration: none;
 }
@@ -63,46 +58,34 @@ h2 {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 1.2;
     font-weight: 700;
+    text-align: center;
 }
 
-/*.content1, .content3, .content5 {
-    
+.contentContainer div {
+    padding: 20px;
+    width: 47%;
+    background-color: white;
+    position: relative;
+    line-height: 1.5;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style: normal;
+    color: #333;
+    display: block;
+    font-size: 1em;
+    overflow: auto
+}
+
+.content1, .content3, .content5 {
+    float: left;
 }
 
 .content2, .content4, .content6 {
-   
-}*/
-
-.content1 {
-    background-color: brown;
-    grid-column: 1 / 6;
-    grid-row: 3 / 4
-}
-
-.content2 {
-    background-color: rgb(122, 7, 65);
-    grid-column: 7 / 13;
-}
-
-.content3 {
-    background-color: rgb(26, 122, 63);
-    grid-column: 1 / 6;
-}
-
-.content4 {
-    background-color: rgb(186, 199, 10);
-    grid-column: 6 / 13;
-}
-
-.content5 {
-    background-color: rgb(48, 46, 46);
-}
-
-.content6 {
-    background-color: rgb(10, 4, 88);
+    float: right
 }
 
 figure {
+    align-items: center;
+    text-align: center;
 }
 
 table {
@@ -118,6 +101,8 @@ table {
     font-style: normal;
     line-height: 1.5;
     font-size: 16px;
+    vertical-align: middle;
+    margin: auto;
     text-align: center;
     font-weight: 400;
 }
@@ -136,13 +121,12 @@ td b {
 }
 
 table.statistics {
-    /*width: 100%;*/
+    width: 100%;
 }
 
 table.standings {
-    /*width: 65%;*/
+    width: 65%;
     margin-top: 30px;
-    column-width: 20px;
 }
 
 table.transactions, table.roster {
@@ -153,17 +137,17 @@ table.transactions {
     padding-bottom: 20px;
 }
 
-/*.statistics td {
+.statistics td {
     width: 10%;
-}*/
+}
 
 .firstColumn, #teamNameColumn {
     border-right: 1px solid #D2D2D2;
 }
 
-/*.standings th, .roster th, .transactions th {
+.standings th, .roster th, .transactions th {
     width: 15%;
-}*/
+}
 
 #teamNameColumn {
     width: 40%;

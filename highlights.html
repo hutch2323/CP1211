@@ -1,91 +1,103 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Toronto Blue Jays Fan Site</title>
-        <link rel="icon" type="image/png" href="images/toronto-blue-jays-logo.png"/>
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/styleSheet.css">
-        <style>
-            figure {
-                display: block;
-            }
-            header h4 {
-                margin: 0px 0px 10px 0px;
-                font-style: italic
-            }
-        </style>
-    </head>
-
-    <body>
-        <header>
-            <h1>Toronto Blue Jays Fan Site<img src="images/toronto-blue-jays-logo.png" width="32" height="30" alt="Jays Logo"> </h1>
-            
-            <h4><i>The ultimate fan experience</i></h4>
-            
-            <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="roster.html">Roster</a></li>
-                <li><a href="highlights.html">Highlights</a></li>
-                <li><a href="transactions.html">Transactions</a></li>
-                <li><a href="signup.html">Newsletter</a></li>
-            </ul>
-        </header>
+    <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout</title>
+    <link rel="stylesheet" href="styles/grid.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Toronto Blue Jays Fan Site<img src="images/toronto-blue-jays-logo.png" width="32" height="30" alt="Jays Logo"> </h1>
+        <h4><i>The ultimate fan experience</i></h4>
+      </header>
+      
+      <nav class="navigation">
+        <!--<h2>nav</h2>
+        <a href="#main-content">skip navigation</a>-->
+        <!--<ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="roster.html">Roster</a></li>
+          <li><a href="highlights.html">Highlights</a></li>
+          <li><a href="transactions.html">Transactions</a></li>
+          <li><a href="signup.html">Newsletter</a></li>
+        </ul>-->
+        <div><a href="index.html">Home</a></div>
+        <div><a href="roster.html">Roster</a></div>
+        <div><a href="highlights.html">Highlights</a></div>
+        <div><a href="transactions.html">Transactions</a></div>
+        <div><a href="signup.html">Newsletter</a></div>
+      </nav>
         
         <main>
             <h2 style="text-align: center; padding: 20px 0px; clear:both; margin: auto;">Game Highlights</h2>
             
             <p style="text-align: center; margin: auto; ">Check out the most recent Toronto Blue Jays highlights below:</p>
-        
+            
             <div class="contentContainer">
                 <div class="content1">
                     <figure style="display:block">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/f8QT4cWFuYU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    
+                        <div class="iframe-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/f8QT4cWFuYU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    
+                        </div>
                         <figcaption>Boston Red Sox vs Toronto Blue Jays - <date datetime="2021-05-20">05/20/2021</date></figcaption>
                     </figure>
                 </div>
 
                 <div class="content2">
                     <figure style="display:block">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/LJaVqcheTg0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="iframe-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/LJaVqcheTg0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                         <figcaption>Boston Red Sox vs Toronto Blue Jays - <date datetime="2021-05-19">05/19/2021</date></figcaption>
                     </figure>
                 </div>  
 
                 <div class="content3">
                     <figure style="display:block">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/RunYcYwBtbI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    
+                        <div class="iframe-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/RunYcYwBtbI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    
+                        </div>
                         <figcaption>Boston Red Sox vs Toronto Blue Jays - <date datetime="2021-05-18">05/18/2021</date></figcaption>
                     </figure>
                 </div>
 
                 <div class="content4">
                     <figure style="display:block">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/yq5QgHwF1Lo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="iframe-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/yq5QgHwF1Lo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                         <figcaption>Philadelphia Phillies vs Toronto Blue Jays - <date datetime="2021-05-16">05/16/2021</date></figcaption>
                     </figure>
                 </div>
 
                 <div class="content5">
                     <figure style="display:block">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/NA7pPc2mL4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
+                        <div class="iframe-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/NA7pPc2mL4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
+                        </div>
                         <figcaption>Philadelphia Phillies vs Toronto Blue Jays - <date datetime="2021-05-15">05/15/2021</date></figcaption>
                     </figure>
                 </div>   
 
                 <div class="content6">
                     <figure style="display:block">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ADeycVbri3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="iframe-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ADeycVbri3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                         <figcaption>Philadelphia Phillies vs Toronto Blue Jays - <date datetime="2021-05-14">05/14/2021</date></figcaption>
                     </figure>
                 </div>
             </div>    
         </main>
+        <div class="contentLeft"></div>
+        <aside></aside>
     </body>
     
     <footer>
-        <p>Author: Marcus Hutchings. Last updated: <time datetime="2021-05-20">05/20/2021</time></p>
+        <p>Author: Marcus Hutchings. Last updated: <time datetime="2021-05-29">05/29/2021</time></p>
     </footer>
 </html>

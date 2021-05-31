@@ -1,295 +1,297 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Toronto Blue Jays Fan Site</title>
-        <link rel="icon" type="image/png" href="images/toronto-blue-jays-logo.png"/>
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/styleSheet.css">
-        <style>
-            figure {
-                display: block;
-            }
-            header h4 {
-                margin: 0px 0px 10px 0px;
-                font-style: italic
-            }
-        </style>
-    </head>
+    <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout</title>
+    <link rel="stylesheet" href="styles/grid.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Toronto Blue Jays Fan Site<img src="images/toronto-blue-jays-logo.png" width="32" height="30" alt="Jays Logo"> </h1>
+        <h4><i>The ultimate fan experience</i></h4>
+      </header>
+      
+      <nav class="navigation">
+        <!--<h2>nav</h2>
+        <a href="#main-content">skip navigation</a>-->
+        <!--<ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="roster.html">Roster</a></li>
+          <li><a href="highlights.html">Highlights</a></li>
+          <li><a href="transactions.html">Transactions</a></li>
+          <li><a href="signup.html">Newsletter</a></li>
+        </ul>-->
+        <div><a href="index.html">Home</a></div>
+        <div><a href="roster.html">Roster</a></div>
+        <div><a href="highlights.html">Highlights</a></div>
+        <div><a href="transactions.html">Transactions</a></div>
+        <div><a href="signup.html">Newsletter</a></div>
+      </nav>
 
-    <body>
-        <header>
-            <h1>Toronto Blue Jays Fan Site<img src="images/toronto-blue-jays-logo.png" width="32" height="30" alt="Jays Logo"> </h1>
-            
-            <h4><i>The ultimate fan experience</i></h4>
-            
-            <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="roster.html">Roster</a></li>
-                <li><a href="highlights.html">Highlights</a></li>
-                <li><a href="transactions.html">Transactions</a></li>
-                <li><a href="signup.html">Newsletter</a></li>
-            </ul>
-        </header>
-        
         <main>
             <h2 style="text-align: center; padding: 20px 0px; clear:both; margin: auto;">Toronto Blue Jays Active Roster</h2>
             
-            <span style="display:block; padding-bottom: 20px">
-                <table class="roster">
-                    <tr>
-                        <th>Pitchers</th>
-                        <th>Jersey Number</th>
-                        <th>Bat/Throw</th>
-                        <th>Height</th>
-                        <th>Weight</th>
-                        <th>Date of Birth</th>
-                    </tr>
-                    <tr>
-                        <td>Jeremy Beasley</td>
-                        <td>59</td>
-                        <td>R/R</td>
-                        <td>6'3"</td>
-                        <td>235</td>
-                        <td>11/20/1995</td>
-                    </tr>
-                    <tr>
-                        <td>Travis Bergen</td>
-                        <td>64</td>
-                        <td>L/L</td>
-                        <td>6'1"</td>
-                        <td>223</td>
-                        <td>10/08/1993</td>
-                    </tr>
-                    <tr>
-                        <td>Tyler Chatwood</td>
-                        <td>34</td>
-                        <td>R/R</td>
-                        <td>5'11"</td>
-                        <td>200</td>
-                        <td>12/16/1989</td>
-                    </tr>
-                    <tr>
-                        <td>A.J Cole</td>
-                        <td>36</td>
-                        <td>R/R</td>
-                        <td>6'5"</td>
-                        <td>240</td>
-                        <td>01/05/1995</td>
-                    </tr>
-                    <tr>
-                        <td>Anthony Kay</td>
-                        <td>47</td>
-                        <td>L/L</td>
-                        <td>6'0"</td>
-                        <td>225</td>
-                        <td>03/21/1995</td>
-                    <tr>
-                        <td>Steven Matz</td>
-                        <td>22</td>
-                        <td>R/L</td>
-                        <td>6'2"</td>
-                        <td>201</td>
-                        <td>05/29/1991</td>
-                    </tr>
-                    <tr>
-                        <td>Tim Mayza</td>
-                        <td>58</td>
-                        <td>L/L</td>
-                        <td>6'3"</td>
-                        <td>220</td>
-                        <td>01/15/1992</td>
-                    </tr>
-                    <tr>
-                        <td>Joel Payamps</td>
-                        <td>54</td>
-                        <td>R/R</td>
-                        <td>6'2"</td>
-                        <td>225</td>
-                        <td>04/07/1994</td>
-                    </tr>
-                    <tr>
-                        <td>Robbie Ray</td>
-                        <td>38</td>
-                        <td>L/L</td>
-                        <td>6'2"</td>
-                        <td>215</td>
-                        <td>10/01/1991</td>
-                    </tr>
-                    <tr>
-                        <td>Jordan Romano</td>
-                        <td>68</td>
-                        <td>R/R</td>
-                        <td>6'5"</td>
-                        <td>225</td>
-                        <td>04/21/1993</td>
-                    </tr>
-                    <tr>
-                        <td>Hyun Jin Ryu</td>
-                        <td>99</td>
-                        <td>R/L</td>
-                        <td>6'3"</td>
-                        <td>255</td>
-                        <td>03/25/1987</td>
-                    </tr>
-                    <tr>
-                        <td>Ross Stripling</td>
-                        <td>48</td>
-                        <td>R/R</td>
-                        <td>6'3"</td>
-                        <td>220</td>
-                        <td>11/23/1989</td>
-                    </tr>
-                    <tr>
-                        <td>Trent Thornton</td>
-                        <td>57</td>
-                        <td>R/R</td>
-                        <td>6'0"</td>
-                        <td>195</td>
-                        <td>09/30/1993</td>
-                    </tr>
-                </table>
+            <div class="roster">
+                <span style="display:block; padding-bottom: 20px">
+                    <table class="roster">
+                        <tr>
+                            <th class="nameColumn">Pitchers</th>
+                            <th>#</th>
+                            <th>Bat/Throw</th>
+                            <th>Height</th>
+                            <th>Weight</th>
+                            <th class="birthColumn">Date of Birth</th>
+                        </tr>
+                        <tr>
+                            <td>Jeremy Beasley</td>
+                            <td>59</td>
+                            <td>R/R</td>
+                            <td>6'3"</td>
+                            <td>235</td>
+                            <td>11/20/1995</td>
+                        </tr>
+                        <tr>
+                            <td>Travis Bergen</td>
+                            <td>64</td>
+                            <td>L/L</td>
+                            <td>6'1"</td>
+                            <td>223</td>
+                            <td>10/08/1993</td>
+                        </tr>
+                        <tr>
+                            <td>Tyler Chatwood</td>
+                            <td>34</td>
+                            <td>R/R</td>
+                            <td>5'11"</td>
+                            <td>200</td>
+                            <td>12/16/1989</td>
+                        </tr>
+                        <tr>
+                            <td>A.J Cole</td>
+                            <td>36</td>
+                            <td>R/R</td>
+                            <td>6'5"</td>
+                            <td>240</td>
+                            <td>01/05/1995</td>
+                        </tr>
+                        <tr>
+                            <td>Anthony Kay</td>
+                            <td>47</td>
+                            <td>L/L</td>
+                            <td>6'0"</td>
+                            <td>225</td>
+                            <td>03/21/1995</td>
+                        <tr>
+                            <td>Steven Matz</td>
+                            <td>22</td>
+                            <td>R/L</td>
+                            <td>6'2"</td>
+                            <td>201</td>
+                            <td>05/29/1991</td>
+                        </tr>
+                        <tr>
+                            <td>Tim Mayza</td>
+                            <td>58</td>
+                            <td>L/L</td>
+                            <td>6'3"</td>
+                            <td>220</td>
+                            <td>01/15/1992</td>
+                        </tr>
+                        <tr>
+                            <td>Joel Payamps</td>
+                            <td>54</td>
+                            <td>R/R</td>
+                            <td>6'2"</td>
+                            <td>225</td>
+                            <td>04/07/1994</td>
+                        </tr>
+                        <tr>
+                            <td>Robbie Ray</td>
+                            <td>38</td>
+                            <td>L/L</td>
+                            <td>6'2"</td>
+                            <td>215</td>
+                            <td>10/01/1991</td>
+                        </tr>
+                        <tr>
+                            <td>Jordan Romano</td>
+                            <td>68</td>
+                            <td>R/R</td>
+                            <td>6'5"</td>
+                            <td>225</td>
+                            <td>04/21/1993</td>
+                        </tr>
+                        <tr>
+                            <td>Hyun Jin Ryu</td>
+                            <td>99</td>
+                            <td>R/L</td>
+                            <td>6'3"</td>
+                            <td>255</td>
+                            <td>03/25/1987</td>
+                        </tr>
+                        <tr>
+                            <td>Ross Stripling</td>
+                            <td>48</td>
+                            <td>R/R</td>
+                            <td>6'3"</td>
+                            <td>220</td>
+                            <td>11/23/1989</td>
+                        </tr>
+                        <tr>
+                            <td>Trent Thornton</td>
+                            <td>57</td>
+                            <td>R/R</td>
+                            <td>6'0"</td>
+                            <td>195</td>
+                            <td>09/30/1993</td>
+                        </tr>
+                    </table>
 
-                <br/>
+                    <br/>
 
-                <table class="roster">
-                    <tr>
-                        <th>Catchers</th>
-                        <th>Jersey Number</th>
-                        <th>Bat/Throw</th>
-                        <th>Height</th>
-                        <th>Weight</th>
-                        <th>Date of Birth</th>
-                    </tr>
-                    <tr>
-                        <td>Danny Jansen</td>
-                        <td>9</td>
-                        <td>R/R</td>
-                        <td>6'2"</td>
-                        <td>225</td>
-                        <td>04/15/1995</td>
-                    </tr>
-                    <tr>
-                        <td>Reese McGuire</td>
-                        <td>7</td>
-                        <td>L/R</td>
-                        <td>6'0"</td>
-                        <td>215</td>
-                        <td>03/02/1995</td>
-                    </tr>
-                </table>
+                    <table class="roster">
+                        <tr>
+                            <th class="nameColumn">Catchers</th>
+                            <th>#</th>
+                            <th>Bat/Throw</th>
+                            <th>Height</th>
+                            <th>Weight</th>
+                            <th class="birthColumn">Date of Birth</th>
+                        </tr>
+                        <tr>
+                            <td>Danny Jansen</td>
+                            <td>9</td>
+                            <td>R/R</td>
+                            <td>6'2"</td>
+                            <td>225</td>
+                            <td>04/15/1995</td>
+                        </tr>
+                        <tr>
+                            <td>Reese McGuire</td>
+                            <td>7</td>
+                            <td>L/R</td>
+                            <td>6'0"</td>
+                            <td>215</td>
+                            <td>03/02/1995</td>
+                        </tr>
+                    </table>
 
-                <br/>
+                    <br/>
 
-                <table class="roster">
-                    <tr>
-                        <th>Infielders</th>
-                        <th>Jersey Number</th>
-                        <th>Bat/Throw</th>
-                        <th>Height</th>
-                        <th>Weight</th>
-                        <th>Date of Birth</th>
-                    </tr>
-                    <tr>
-                        <td>Bo Bichette</td>
-                        <td>11</td>
-                        <td>R/R</td>
-                        <td>6'0"</td>
-                        <td>185</td>
-                        <td>03/05/1998</td>
-                    </tr>
-                    <tr>
-                        <td>Cavan Biggio</td>
-                        <td>8</td>
-                        <td>L/R</td>
-                        <td>6'2"</td>
-                        <td>200</td>
-                        <td>04/11/1995</td>
-                    </tr>
-                    <tr>
-                        <td>Santiago Espinal</td>
-                        <td>5</td>
-                        <td>R/R</td>
-                        <td>5'10"</td>
-                        <td>181</td>
-                        <td>11/13/1994</td>
-                    </tr>
-                    <tr>
-                        <td>Vladimir Guerrero Jr.</td>
-                        <td>27</td>
-                        <td>R/R</td>
-                        <td>6'2"</td>
-                        <td>250</td>
-                        <td>03/16/1999</td>
-                    </tr>
-                    <tr>
-                        <td>Marcus Semien</td>
-                        <td>10</td>
-                        <td>R/R</td>
-                        <td>6'0"</td>
-                        <td>195</td>
-                        <td>09/17/1990</td>
-                    <tr>
-                        <td>Rowdy Tellez</td>
-                        <td>44</td>
-                        <td>L/L</td>
-                        <td>6'4"</td>
-                        <td>255</td>
-                        <td>03/16/1995</td>
-                    </tr>                        
-                </table>
+                    <table class="roster">
+                        <tr>
+                            <th class="nameColumn">Infielders</th>
+                            <th>#</th>
+                            <th>Bat/Throw</th>
+                            <th>Height</th>
+                            <th>Weight</th>
+                            <th class="birthColumn">Date of Birth</th>
+                        </tr>
+                        <tr>
+                            <td>Bo Bichette</td>
+                            <td>11</td>
+                            <td>R/R</td>
+                            <td>6'0"</td>
+                            <td>185</td>
+                            <td>03/05/1998</td>
+                        </tr>
+                        <tr>
+                            <td>Cavan Biggio</td>
+                            <td>8</td>
+                            <td>L/R</td>
+                            <td>6'2"</td>
+                            <td>200</td>
+                            <td>04/11/1995</td>
+                        </tr>
+                        <tr>
+                            <td>Santiago Espinal</td>
+                            <td>5</td>
+                            <td>R/R</td>
+                            <td>5'10"</td>
+                            <td>181</td>
+                            <td>11/13/1994</td>
+                        </tr>
+                        <tr>
+                            <td>Vladimir Guerrero Jr.</td>
+                            <td>27</td>
+                            <td>R/R</td>
+                            <td>6'2"</td>
+                            <td>250</td>
+                            <td>03/16/1999</td>
+                        </tr>
+                        <tr>
+                            <td>Marcus Semien</td>
+                            <td>10</td>
+                            <td>R/R</td>
+                            <td>6'0"</td>
+                            <td>195</td>
+                            <td>09/17/1990</td>
+                        <tr>
+                            <td>Rowdy Tellez</td>
+                            <td>44</td>
+                            <td>L/L</td>
+                            <td>6'4"</td>
+                            <td>255</td>
+                            <td>03/16/1995</td>
+                        </tr>                        
+                    </table>
 
-                <br/>
+                    <br/>
 
-                <table class="roster">
-                    <tr>
-                        <th>Outfielders</th>
-                        <th>Jersey Number</th>
-                        <th>Bat/Throw</th>
-                        <th>Height</th>
-                        <th>Weight</th>
-                        <th>Date of Birth</th>
-                    </tr>
-                    <tr>
-                        <td>Jonathan Davis</td>
-                        <td>3</td>
-                        <td>R/R</td>
-                        <td>5'8"</td>
-                        <td>190</td>
-                        <td>05/12/1992</td>
-                    </tr>
-                    <tr>
-                        <td>Randal Grichuk</td>
-                        <td>15</td>
-                        <td>R/R</td>
-                        <td>6'2"</td>
-                        <td>216</td>
-                        <td>08/13/1991</td>
-                    </tr>
-                    <tr>
-                        <td>Lourdes Gurriel Jr.</td>
-                        <td>13</td>
-                        <td>R/R</td>
-                        <td>6'4"</td>
-                        <td>215</td>
-                        <td>10/10/1993</td>
-                    </tr>
-                    <tr>
-                        <td>Teoscar Hernández</td>
-                        <td>37</td>
-                        <td>R/R</td>
-                        <td>6'2"</td>
-                        <td>205</td>
-                        <td>10/15/1992</td>
-                    </tr>                    
-                </table> 
-            </span>    
-        </main>
+                    <table class="roster">
+                        <tr>
+                            <th class="nameColumn">Outfielders</th>
+                            <th>#</th>
+                            <th>Bat/Throw</th>
+                            <th>Height</th>
+                            <th>Weight</th>
+                            <th class="birthColumn">Date of Birth</th>
+                        </tr>
+                        <tr>
+                            <td>Jonathan Davis</td>
+                            <td>3</td>
+                            <td>R/R</td>
+                            <td>5'8"</td>
+                            <td>190</td>
+                            <td>05/12/1992</td>
+                        </tr>
+                        <tr>
+                            <td>Randal Grichuk</td>
+                            <td>15</td>
+                            <td>R/R</td>
+                            <td>6'2"</td>
+                            <td>216</td>
+                            <td>08/13/1991</td>
+                        </tr>
+                        <tr>
+                            <td>Lourdes Gurriel Jr.</td>
+                            <td>13</td>
+                            <td>R/R</td>
+                            <td>6'4"</td>
+                            <td>215</td>
+                            <td>10/10/1993</td>
+                        </tr>
+                        <tr>
+                            <td>Teoscar Hernández</td>
+                            <td>37</td>
+                            <td>R/R</td>
+                            <td>6'2"</td>
+                            <td>205</td>
+                            <td>10/15/1992</td>
+                        </tr>                    
+                    </table> 
+                </span> 
+            </div>  
+       </main>
+       <div class="contentLeft"></div>
+       <aside></aside>
+        <footer>
+            <p>Author: Marcus Hutchings. Last updated: <time datetime="2021-05-29">05/29/2021</time></p>
+        </footer>
     </body>
-    <footer>
-        <p>Author: Marcus Hutchings. Last updated: <time datetime="2021-05-17">05/20/2021</time></p>
-    </footer>
 </html>                   
             
